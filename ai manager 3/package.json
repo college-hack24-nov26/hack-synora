@@ -1,0 +1,13 @@
+{
+  "name": "ai-personal-finance-manager",
+  "version": "1.0.0",
+  "description": "Production-grade AI Personal Finance Manager for Indian & Global banking",
+  "scripts": {
+    "dev:backend": "cd backend && .\\venv\\Scripts\\uvicorn app.main:app --reload --port 8000",
+    "dev:frontend": "cd frontend && npm.cmd run dev",
+    "build:frontend": "cd frontend && npm.cmd run build",
+    "test:backend": "cd backend && .\\venv\\Scripts\\pytest -v tests",
+    "docker:up": "docker compose up --build",
+    "docker:down": "docker compose down"
+  }
+}
